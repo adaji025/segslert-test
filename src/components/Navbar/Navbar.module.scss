@@ -20,6 +20,7 @@
 
     @include breakpoint(md) {
       position: relative;
+      height: 80px;
     }
 
     &__logo {
@@ -100,6 +101,8 @@
     }
     &__menuIcon {
       display: none;
+      // margin-top: 5px;
+
       @include breakpoint(md) {
         display: block;
         position: absolute;

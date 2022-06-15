@@ -1,0 +1,99 @@
+@import "../../../styles/variable.scss";
+
+.card {
+  max-width: 400px;
+  height: 550px;
+  box-shadow: 9px 9px 40px -18px rgba(56, 46, 46, 0.41);
+  -webkit-box-shadow: 9px 9px 40px -18px rgba(56, 46, 46, 0.41);
+  -moz-box-shadow: 9px 9px 40px -18px rgba(56, 46, 46, 0.41);
+  border-radius: 32px;
+
+  &__image {
+    position: relative;
+
+    img {
+      max-width: 100%;
+      border-top-left-radius: 32px;
+      border-top-right-radius: 32px;
+    }
+
+    &__sale {
+      background: $darkBlue;
+      display: inline-flex;
+      padding: 0.5rem 1.5rem;
+      font-size: 24px;
+      border-radius: 12px;
+      color: #fff;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+  }
+
+  &__desc {
+    padding: 1.5rem;
+
+    &__duplex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      span {
+        font-size: 20px;
+        color: $darkBlue;
+      }
+    }
+
+    &__location {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      margin-top: 1.5rem;
+      font-size: 20px;
+      color: gray;
+    }
+
+    &__icon {
+      margin-top: 1rem;
+      display: flex;
+      gap: 10px;
+      margin-bottom: 1rem;
+
+      &__first {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        span:nth-child(1) {
+          background: $lightBlue;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          padding: 10px;
+          border-radius: 6px;
+        }
+      }
+    }
+    &__profile {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &__picture {
+        margin-top: 1rem;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        img {
+          height: 63px;
+          width: 63px;
+          border-radius: 50%;
+        }
+      }
+      &__icon {
+        display: flex;
+        gap: 10px;
+      }
+    }
+  }
+}

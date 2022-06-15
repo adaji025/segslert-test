@@ -38,11 +38,11 @@ const Navbar = () => {
         <div className={styles.navbar__menuIcon}>
           {isActive ? (
             <span className="" onClick={() => setIsActive(!isActive)}>
-              <AiOutlineClose size={25} />
+              <AiOutlineClose size={35} />
             </span>
           ) : (
             <span className="" onClick={() => setIsActive(!isActive)}>
-              <BiMenuAltRight size={25} />
+              <BiMenuAltRight size={35} />
             </span>
           )}
         </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import { FaHouseDamage } from "react-icons/fa";
-import ServicesCard from "../ServicesCard/ServicesCard";
+import ServicesCard from "./ServicesCard/ServicesCard";
 import styles from "./Services.module.scss";
 
 const Services = () => {
@@ -28,7 +28,7 @@ const Services = () => {
           <h2>What We Do</h2>
           <h1>Our Main Focus</h1>
         </div>
-        <div className={styles.wrapper__services_card}>
+        <div className={styles.wrapper__services__card}>
           {dummyServices.map((service, i) => (
             <ServicesCard service={service} />
           ))}
