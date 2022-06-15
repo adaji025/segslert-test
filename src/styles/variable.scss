@@ -1,5 +1,15 @@
-$darkBlue: '#2A2A40';
-$lightBlue: '#9DB6D5';
-$darkGray: '#AAAAAA';
-$dark: '#2A2B2B';
-$lightGray: '#C6C6C6'
+$darkBlue: #4373AF;
+$lightBlue: #9DB6D5;
+$darkGray: #AAAAAA;
+$dark: #2A2B2B;
+$lightGray: #C6C6C6;
+$bg: #F6F9FE;
+
+
+@mixin breakpoint($point) {
+    @if $point == md{
+        @media (max-width: 818px) {
+            @content;
+        }
+    }
+}
