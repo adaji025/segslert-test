@@ -12,4 +12,9 @@ $bg: #F6F9FE;
             @content;
         }
     }
+    @if $point == sm {
+        @media (max-width: 576px) {
+            @content
+        }
+    }
 }
