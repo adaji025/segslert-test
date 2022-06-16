@@ -1,5 +1,6 @@
 import React from "react";
-import { FaMapMarkerAlt } from "react-icons/fa";
+import { FaMapMarkerAlt, FaHeart, FaHdd, FaHourglassEnd } from "react-icons/fa";
+import { AiOutlineShareAlt } from 'react-icons/ai'
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import styles from "./PropertyCard.module.scss";
 
@@ -26,7 +27,7 @@ const PropertyCard = ({ ppt }) => {
         <div className={styles.card__desc__icon}>
           <div className={styles.card__desc__icon__first}>
             <span>
-              <AiOutlineShoppingCart size={20} />
+              <FaHdd size={20} />
             </span>
             <span>4</span>
           </div>
@@ -38,7 +39,7 @@ const PropertyCard = ({ ppt }) => {
           </div>
           <div className={styles.card__desc__icon__first}>
             <span>
-              <AiOutlineShoppingCart size={20} />
+              <FaHourglassEnd size={20} />
             </span>
             <span>1200sqft</span>
           </div>
@@ -50,7 +51,7 @@ const PropertyCard = ({ ppt }) => {
             <p>Adaji Mukhtar</p>
           </div>
           <div className={styles.card__desc__profile__icon}>
-          <FaMapMarkerAlt size={20} /><FaMapMarkerAlt size={20} />
+          <FaHeart size={20} /><AiOutlineShareAlt size={20} />
           </div>
         </div>
       </div>

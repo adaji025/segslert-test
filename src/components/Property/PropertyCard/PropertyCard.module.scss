@@ -58,6 +58,7 @@
       display: flex;
       gap: 10px;
       margin-bottom: 1rem;
+      color: gray;
 
       &__first {
         display: flex;
@@ -93,6 +94,7 @@
       &__icon {
         display: flex;
         gap: 10px;
+        color: gray;
       }
     }
   }

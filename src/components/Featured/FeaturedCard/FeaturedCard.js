@@ -1,6 +1,7 @@
 import React from "react";
 import { AiOutlineShoppingCart } from "react-icons/ai";
-import { FaMapMarkerAlt } from "react-icons/fa";
+import { FaMapMarkerAlt, FaHeart, FaHdd, FaHourglassEnd } from "react-icons/fa";
+import { AiOutlineShareAlt } from "react-icons/ai";
 import styles from "./FeaturedCard.module.scss";
 import house1 from "../../../assets/images/house1.jpg";
 
@@ -17,7 +18,7 @@ const FeaturedCard = () => {
         <div className={styles.card__text__icon}>
           <div className={styles.card__text__icon__first}>
             <span>
-              <AiOutlineShoppingCart size={20} />
+              <FaHdd size={20} />
             </span>
             <span>4</span>
           </div>
@@ -29,7 +30,7 @@ const FeaturedCard = () => {
           </div>
           <div className={styles.card__text__icon__first}>
             <span>
-              <AiOutlineShoppingCart size={20} />
+              <FaHourglassEnd size={20} />
             </span>
             <span>1200sqft</span>
           </div>
@@ -43,7 +44,8 @@ const FeaturedCard = () => {
             <p>Adaji Mukhtar</p>
           </div>
           <div className={styles.card__text__profile__icon}>
-          <FaMapMarkerAlt size={20} /><FaMapMarkerAlt size={20} />
+            <FaHeart size={20} />
+            <AiOutlineShareAlt size={20} />
           </div>
         </div>
       </div>
