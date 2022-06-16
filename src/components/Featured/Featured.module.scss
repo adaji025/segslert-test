@@ -6,24 +6,24 @@
   margin-inline: auto;
   margin-top: 10rem;
 
-  &__property {
+  &__featured {
     max-width: 1400px;
     margin-inline: auto;
 
     &__title {
-        text-align: center;
-        text-transform: uppercase;
-        margin-bottom: 2rem;
-        h3 {
-            color: $darkBlue;
-            margin-bottom: 10px;
-        }
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
 
-        h1 {
-            font-weight: bold;
-        }
+      h3 {
+        color: $darkBlue;
+        margin-bottom: 10px;
+      }
+
+      h1 {
+        font-weight: bold;
+      }
     }
-
     &__card {
       display: flex;
       justify-content: center;
