@@ -1,0 +1,53 @@
+@import "../../styles/variable.scss";
+
+.wrapper {
+  width: 100%;
+  min-height: calc(100vh - 130px);
+  margin-inline: auto;
+  margin-top: 10rem;
+  background: $bg;
+
+  &__testimonial {
+    max-width: 1400px;
+    margin-inline: auto;
+    
+    
+
+    &__title {
+      text-align: center;
+      text-transform: uppercase;
+      padding-top: 3rem;
+      margin-bottom: 1rem;
+
+      h3 {
+        color: $darkBlue;
+        margin-bottom: 10px;
+      }
+
+      h1 {
+        font-weight: bold;
+      }
+    }
+    &__card {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 3rem;
+      padding: 1rem;
+    }
+    &__see {
+      margin-top: 2rem;
+      padding-bottom: 2rem;
+      text-align: center;
+
+      button {
+        outline: none;
+        border: 1px solid $darkBlue;
+        border-radius: 40px;
+        padding: 1rem 2.5rem;
+        font-size: 18px;
+        color: $darkBlue;
+      }
+    }
+  }
+}
