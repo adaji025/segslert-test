@@ -30,7 +30,7 @@ const Services = () => {
         </div>
         <div className={styles.wrapper__services__card}>
           {dummyServices.map((service, i) => (
-            <ServicesCard service={service} />
+            <ServicesCard service={service} key={i}/>
           ))}
         </div>
       </div>

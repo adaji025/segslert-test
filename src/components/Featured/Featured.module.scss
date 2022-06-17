@@ -22,6 +22,10 @@
 
       h1 {
         font-weight: bold;
+
+        @include breakpoint(sm) {
+          font-size: 26px;
+        }
       }
     }
     &__card {
