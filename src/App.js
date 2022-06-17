@@ -6,6 +6,7 @@ import Property from './components/Property/Property';
 import Featured from './components/Featured/Featured';
 import Blog from './components/Blog/Blog';
 import Testimonial from './components/Testimonial/Testimonial';
+import { Footer } from './components/Footer/Footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Featured />
       <Blog />
       <Testimonial />
+      <Footer />
     </div>
   );
 }
