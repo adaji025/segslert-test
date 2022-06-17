@@ -5,6 +5,10 @@
     margin-inline: auto;
     margin-top: 10rem;
 
+    @include breakpoint(sm) {
+        margin-top: 5rem;
+    }
+
     &__services {
         max-width: 1400px;
         margin-inline: auto;
@@ -18,11 +22,19 @@
             h2 {
                 color: $darkBlue;
                 text-transform: uppercase;
+
+                @include breakpoint(sm) {
+                    font-size: 20px;
+                }
             }
             h1 {
                 font-size: 42px;
                 margin-top: 10px;
                 font-weight: bold;
+
+                @include breakpoint(sm) {
+                    font-size: 32px;
+                }
             }
         }
 

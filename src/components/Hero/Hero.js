@@ -10,8 +10,10 @@ const Hero = () => {
       <div className={styles.hero}>
         <div className={styles.hero__text}>
           <h1>
-            Find Your Best <br /> Smart <span>Real</span> <br />{" "}
-            <span>Estate</span>{" "}
+            Find Your Best 
+            <span> Smart</span>
+           <span> Real</span>
+            <span> Estate</span>
           </h1>
         </div>
         <div className={styles.hero__image}>
@@ -33,7 +35,7 @@ const Hero = () => {
           </div>
         </div>
         <div className={styles.wrapper__desc__property}>
-        <span>
+          <span>
             <FaMapMarkerAlt size={20} />
           </span>
           <div className={styles.wrapper__desc__location__border}>
@@ -46,7 +48,7 @@ const Hero = () => {
           </div>
         </div>
         <div className={styles.wrapper__desc__price}>
-        <span>
+          <span>
             <FaMapMarkerAlt size={20} />
           </span>
           <div className={styles.wrapper__desc__location__border}>

@@ -17,7 +17,7 @@
 
     @include breakpoint(md) {
       width: 100%;
-      height: 60vh;
+      height: 80vh;
     }
 
     &__text {
@@ -26,9 +26,26 @@
       h1 {
         font-size: 74px;
         margin-top: 2rem;
+        
 
-        span {
+        @include breakpoint(sm) {
+          font-size: 64px;
+        }
+
+        span:nth-child(1) {
+          
+        }
+        span:nth-child(2) {
           color: $darkBlue;
+          // display: block;
+        }
+        span:nth-child(3) {
+          color: $darkBlue;
+          display: block;
+
+          @include breakpoint(md) {
+            display: inline;
+          }
         }
         @include breakpoint(sm) {
           font-size: 42px;
@@ -39,6 +56,11 @@
         width: 100%;
         padding: 2rem;
       }
+      @include breakpoint(sm) {
+        width: 100%;
+        padding: 1rem;
+      }
+      
     }
 
     &__image {

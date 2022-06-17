@@ -4,24 +4,12 @@
   max-width: 1400px;
   margin-inline: auto;
   padding: 4rem;
-  //   display: grid;
-  //   grid-template-columns: repeat(4, 25%);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   place-items: start center;
   gap: 2rem;
   font-size: 18px;
-
-//   @media (max-width: 960px) {
-//     grid-template-columns: repeat(2, 50%);
-//     place-items: start;
-//     padding: 2rem;
-//   }
-
-//   @include breakpoint(sm) {
-//     grid-template-columns: repeat(1, 100%);
-//   }
 
   &__first {
     width: 25%;

@@ -1,5 +1,4 @@
 import React from "react";
-import { FaHouseDamage } from "react-icons/fa";
 import styles from "./ServicesCard.module.scss";
 
 const ServicesCard = ({ service }) => {
