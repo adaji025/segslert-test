@@ -28,6 +28,13 @@ const MenuItems = [
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
+  const [click, setClick] = useState(0);
+
+  const getClicked = (menu) => {
+    for(let i = 0; i < menu.length; i++) {
+      console.log(menu[i]);
+    }
+  }
   return (
     <div className={styles.wrapper}>
       <nav className={styles.navbar}>
@@ -53,8 +60,13 @@ const Navbar = () => {
         >
           {MenuItems.map((menu, i) => (
             <li key={i}>
-              <a className={styles.navbar__menuItem__link} href={menu.url}>
-                {console.log(menu.url)}
+              <a
+                className={i === click ? styles.navbar__menuItem__active  : styles.navbar__menuItem__link }
+                href={menu.url}
+                onClick={() => {
+                  setClick(i)
+                }}
+              >
                 {menu.title}
               </a>
             </li>
