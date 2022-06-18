@@ -1,6 +1,6 @@
-import React from 'react'
-import styles from './Blog.module.scss'
-import BlogCard from './BlogCard/BlogCard'
+import React from "react";
+import styles from "./Blog.module.scss";
+import BlogCard from "./BlogCard/BlogCard";
 
 const Blog = () => {
   return (
@@ -20,7 +20,7 @@ const Blog = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Blog
+export default Blog;
